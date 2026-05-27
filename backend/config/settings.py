@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-#)wfnt7+xpm!f-17ua67lzb$pyvp@1rijj@at)w)##5ipk0z40"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "breathe-esg-dashboard-tgna.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
