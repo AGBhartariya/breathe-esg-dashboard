@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    background: #050816;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-container {
+    width: 94%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 44px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-bottom: 26px;
+}
+
+.stat-card {
+    background: #131a38;
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+    border-left: 4px solid #4a90e2;
+}
+
+.stat-card h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.stat-card p {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.pending {
+    border-left-color: orange;
+}
+
+.approved {
+    border-left-color: #39ff14;
+}
+
+.rejected {
+    border-left-color: red;
+}
+
+.suspicious {
+    border-left-color: #ff3355;
+}
+
+.upload-card {
+    background: #0c1433;
+    border-radius: 14px;
+    padding: 26px;
+    margin-bottom: 28px;
+    border: 1px solid #28345f;
+}
+
+.upload-card h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 26px;
+}
+
+.upload-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.upload-controls select,
+.filter-section select {
+    padding: 9px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #1f2937;
+    color: white;
+    font-size: 14px;
+}
+
+.upload-controls button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 38px;
+}
+
+th {
+    background: #1b2552;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+td {
+    border: 1px solid #2f3b6d;
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status-badge.pending {
+    background: orange;
+    color: black;
+}
+
+.status-badge.approved {
+    background: #39ff14;
+    color: black;
+}
+
+.status-badge.rejected {
+    background: red;
+    color: white;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.approve-btn,
+.reject-btn {
+    border: none;
+    padding: 8px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.approve-btn {
+    background: green;
+    color: white;
+}
+
+.reject-btn {
+    background: red;
+    color: white;
+}
+
+.batch-section,
+.issues-section {
+    margin-top: 34px;
+}
+
+.batch-section h2,
+.issues-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.suspicious-pill {
+    background: rgba(255, 0, 0, 0.15);
+    color: #ff7b7b;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.clean-tag {
+    color: #7dff9f;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-title {
+        font-size: 34px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    th,
+    td {
+        font-size: 11px;
+        padding: 10px;
+    }
+}
