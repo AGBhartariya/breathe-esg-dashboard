@@ -30,7 +30,7 @@ function App() {
         try {
 
             const response = await axios.get(
-                "http://127.0.0.1:8000/api/activities/"
+                "https://breathe-esg-dashboard-tgna.onrender.com/api/activities/"
             );
 
             setActivities(response.data);
@@ -50,7 +50,7 @@ function App() {
         try {
 
             const response = await axios.get(
-                "http://127.0.0.1:8000/api/issues/"
+                "https://breathe-esg-dashboard-tgna.onrender.com/api/issues/"
             );
 
             setIssues(response.data);
@@ -70,7 +70,7 @@ function App() {
         try {
 
             const response = await axios.get(
-                "http://127.0.0.1:8000/api/batches/"
+                "https://breathe-esg-dashboard-tgna.onrender.com/api/batches/"
             );
 
             setBatches(response.data);
@@ -120,7 +120,7 @@ function App() {
         try {
 
             await axios.post(
-                "http://127.0.0.1:8000/api/upload/",
+                "https://breathe-esg-dashboard-tgna.onrender.com/api/upload/",
                 formData
             );
 
@@ -149,7 +149,7 @@ function App() {
         try {
 
             await axios.post(
-                `http://127.0.0.1:8000/api/approve/${id}/`
+                `https://breathe-esg-dashboard-tgna.onrender.com/api/approve/${id}/`
             );
 
             fetchActivities();
@@ -169,7 +169,7 @@ function App() {
         try {
 
             await axios.post(
-                `http://127.0.0.1:8000/api/reject/${id}/`
+                `https://breathe-esg-dashboard-tgna.onrender.com/api/reject/${id}/`
             );
 
             fetchActivities();
